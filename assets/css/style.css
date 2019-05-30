@@ -221,7 +221,76 @@
         h1 {
             padding-bottom: 5px;
             font-size: 10px;
-            line-height: 19px;
+            line-height: 5px;
+            border-bottom: 1px solid #dddddd;
+        }
+        h1,
+        h2,
+        h3 {
+            font-weight: bold;
+        }
+        #masthead {
+            position: static;
+            height: 40px;
+        }
+        #main-container {
+            padding-top: 20px;
+            min-height: calc(100vh - 70px);
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        nav a {
+            margin-left: 0px;
+            margin-right: 10px;
+            line-height: 10px;
+        }
+        #logo {
+            width: 70px;
+            height: 50px;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 50px;
+        }
+        .main-section {
+            max-width: 300px;
+            padding: 15px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .work {
+            width: 26px;
+        }
+        .auth-image {
+            width: 100px;
+            margin-top: 5px;
+            margin-right: 15px;
+        }
+        footer {
+            padding: 10px 0;
+            font-size: 15px;
+            border-top: 5px solid #4aaaa5;
+            height: 35px;
+            line-height: 12px;
+        }
+    }
+    /*media query for when the screen size is less than
+    or equal to 768px;*/
+    
+    @media screen and (max-width: 768px) {
+        body {
+            font-size: 15px;
+            line-height: 1;
+        }
+        h1 {
+            padding-bottom: 5px;
+            font-size: 15px;
+            line-height: 12px;
             border-bottom: 1px solid #dddddd;
         }
         h1,
@@ -236,27 +305,28 @@
         #main-container {
             padding-top: 20px;
             min-height: calc(100vh - 70px);
+            margin: 0 auto;
         }
         .container {
-            max-width: 360px;
+            max-width: 500px;
             margin: 0 auto;
         }
         nav a {
             margin-left: 0px;
-            margin-right: 10px;
-            line-height: 15px;
+            margin-right: 25px;
+            line-height: 10px;
         }
         #logo {
-            width: 70px;
+            width: 100px;
             height: 50px;
-            font-size: 10px;
+            font-size: 14px;
             font-weight: 700;
             line-height: 50px;
         }
         .main-section {
-            max-width: 360px;
+            max-width: 500px;
             padding: 15px;
-            margin: 0 0 30px;
+            height: 350px;
         }
         .work {
             width: 26px;
@@ -266,11 +336,105 @@
             margin-top: 5px;
             margin-right: 15px;
         }
+        footer {
+            padding: 10px 0;
+            font-size: 15px;
+            border-top: 5px solid #4aaaa5;
+            height: 35px;
+            line-height: 12px;
+        }
     }
+    /*media query for screen max-width less than or eequal to 980px*/
     
-    footer {
-        padding: 10px 0;
-        font-size: 8px;
-        border-top: 5px solid #4aaaa5;
-        height: 25px;
+    @media screen and (max-width: 980px) {
+        body {
+            font-size: 20px;
+            line-height: 1;
+        }
+        h1 {
+            padding-bottom: 5px;
+            font-size: 20px;
+            line-height: 25px;
+            border-bottom: 1px solid #dddddd;
+        }
+        h1,
+        h2,
+        h3 {
+            font-weight: bold;
+        }
+        #masthead {
+            position: static;
+            height: 60px;
+        }
+        #main-container {
+            padding-top: 20px;
+            min-height: calc(100vh - 70px);
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+        }
+        nav a {
+            margin-left: 0px;
+            margin-right: 10px;
+            line-height: 20px;
+        }
+        #logo {
+            width: 100px;
+            height: 60px;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 60px;
+        }
+        .main-section {
+            max-width: 840px;
+            padding: 15px;
+        }
+        /* portfolio page */
+        .work {
+            position: relative;
+            float: left;
+            width: 35%;
+            margin: 10px;
+            overflow: auto;
+            box-sizing: border-box;
+        }
+        .work:nth-child(even) {
+            margin-right: 15px;
+        }
+        .work img {
+            width: 100%;
+            border: 0 none;
+            opacity: 0.8;
+        }
+        img {
+            width: 100%;
+            margin: 15px;
+        }
+        .work h3 {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            padding: 10px 0 10px 0;
+            margin-bottom: 0;
+            font-weight: 300;
+            line-height: 10px;
+            font-size: 15px;
+        }
+        h3 {
+            margin-left: 15px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        footer {
+            padding: 10px 0;
+            font-size: 15px;
+            border-top: 5px solid #4aaaa5;
+            height: 35px;
+            line-height: 12px;
+        }
     }
